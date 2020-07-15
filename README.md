@@ -1,10 +1,14 @@
+
 ## Summer Work
+
 ### Irene Wang
-#### This is my project/any work that took place over the summer of 2020 as an intern, and I'm utilizing GitHub as a way to track and demonstrate by progress. Everything is virtually self taught.
 
-##### **Table of Contents**
+This is my project/any work that took place over the summer of 2020 as an intern, and I'm utilizing GitHub as a way to track and demonstrate by progress. Everything is virtually self taught.
 
-[***Part 1: Dice Roll***](RMarkdown/diceroll.md): This details my work on simulating the rolling of dice and an investigation on the fairness of a single die.
+## **Table of Contents**
+
+### [***Part 1: Dice Roll***](RMarkdown/diceroll.md): 
+This details my work on simulating the rolling of dice and an investigation on the fairness of a single die.
 
 [***Part 2: R Functions***](RMarkdown/rfunctions.md): I learned about functions in R and the manipulation of them through the use of the `uniroot()` function by implementing science functions from classes in school.
 
