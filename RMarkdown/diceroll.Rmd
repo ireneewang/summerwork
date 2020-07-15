@@ -1,3 +1,12 @@
+---
+title: "Dice Roll"
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
 **7/6/20:first.R**: My first script starts with 3 simple functions. First, I simulated the rolling of a pair of dice and the computation of their sum by writing a function dubbed `roll()`. This was executed using `sample()`. The next two functions essentially follow the same format. I took equations from my science classes in school and wrote them as functions. The gist of these two functions is that given the input values, it can calculate the result by following the given equation.
 ```{r first}
 source("../R/first.R")
