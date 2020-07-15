@@ -4,7 +4,7 @@
 
 ##### **Table of Contents**
 
-[***Part 1: Dice Roll***](RMarkdown/diceroll.RMD): This details my work on simulating the rolling of dice and an investigation on the fairness of a single die.
+[***Part 1: Dice Roll***](RMarkdown/diceroll.Rmd): This details my work on simulating the rolling of dice and an investigation on the fairness of a single die.
 
 ***Part 2: R Functions***: I learned about functions in R and the manipulation of them through the use of the `uniroot()` function by implementing science functions from classes in school.
 
