@@ -54,4 +54,47 @@ roll2(times = 60)
 
 ``` r
 tmp <- table(roll2(times = 60))
+
+fair.die <- data.frame(value = 1:6, 
+                       observed = as.vector(tmp1),
+                       expected = 10)
+fair.die
 ```
+
+    ##   value observed expected
+    ## 1     1       22       10
+    ## 2     2       20       10
+    ## 3     3       15       10
+    ## 4     4       18       10
+    ## 5     5       25       10
+    ## 6     6       20       10
+
+**7/16/20:biaseddie.R**: This code is an expansion on fairdie.R, where I
+instead make a weighted die where the probability of rolling a six is
+3/8 and the probability of rolling 1 to 5 is 1/8. I then carried out the
+tests and repeated trials from fairdie.R to compare the “fairness” of
+the die.
+
+``` r
+source("../R/biaseddie.R")
+tmp <- table(roll(times = 12000))
+
+biased.die <- data.frame(value = 1:6, 
+                       observed = as.vector(tmp),
+                       expected = 2000)
+biased.die
+```
+
+    ##   value observed expected
+    ## 1     1     1489     2000
+    ## 2     2     1411     2000
+    ## 3     3     1546     2000
+    ## 4     4     1516     2000
+    ## 5     5     1441     2000
+    ## 6     6     4597     2000
+
+Unsurprisingly, the amount of sixes rolled was much larger compared to
+the other numbers, and thus, the chi-sq test produced an extremely small
+p-value: indicating a rejection of the null hypothesis that the
+probability of rolling each number is equal. Thus, in trade, if such
+bias was made, the person the bias favors can gain a significant amount.
