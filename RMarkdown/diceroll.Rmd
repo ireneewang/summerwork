@@ -1,12 +1,18 @@
 ---
 title: "Dice Roll"
-output: rmarkdown::github_document
+output:
+  html_document:
+    toc: true
+    theme: united
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
 ```
+
+## First
+
 **7/6/20:first.R**: My first script starts with 3 simple functions. First, I simulated the rolling of a pair of dice and the computation of their sum by writing a function dubbed `roll()`. This was executed using `sample()`. The next two functions essentially follow the same format. I took equations from my science classes in school and wrote them as functions. The gist of these two functions is that given the input values, it can calculate the result by following the given equation.
 ```{r first}
 source("../R/first.R")
@@ -17,6 +23,8 @@ roll <- function() {
 } 
 roll()
 ```
+
+## Second
 
 **7/8/20:fairdie.R**: This script is an expansion on the dice simulation in first.R. I slightly rewrote `roll()` into `roll2()` in order to simulate the rolling of one singular die. From there, I utilized `set.seed()` in order to reproduce "random" results (it's not truly random, however, because a computer can't produce random figures). 
 
@@ -37,6 +45,8 @@ fair.die <- data.frame(value = 1:6,
                        expected = 10)
 fair.die
 ```
+
+## Third 
 
 **7/16/20:biaseddie.R**: This code is an expansion on fairdie.R, where I instead make a weighted die where the probability of rolling a six is 3/8 and the probability of rolling 1 to 5 is 1/8. I then carried out the tests and repeated trials from fairdie.R to compare the "fairness" of the die.
 ```{r biaseddie}

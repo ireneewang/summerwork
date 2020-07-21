@@ -1,5 +1,4 @@
-setwd("../SummerWork/")
-income <- read.csv("data/appleannualincome.csv", header = TRUE, skip = 1, stringsAsFactors = FALSE)
+income <- read.csv("../data/appleannualincome.csv", header = TRUE, skip = 1, stringsAsFactors = FALSE)
 
 # clean it up first
 # filter to remove NA 
@@ -8,6 +7,7 @@ income <- income[!is.na(income$Fiscal.period), ]
 income2 <- income[, c("Fiscal.period", "Total.Revenues")]
 
 # convert Total revenuew to numeric
+library(ggplot2)
 
 income2$Total.Revenues <- as.numeric(gsub(",", "", income2$Total.Revenues))
 

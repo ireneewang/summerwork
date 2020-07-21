@@ -1,6 +1,9 @@
 ---
 title: "Apple Report"
-output: rmarkdown::github_document
+output:
+  html_document:
+    toc: true
+    theme: united
 ---
 
 ```{r setup, include=FALSE}
@@ -8,4 +11,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
+## First
+
 **7/10/20:appleincome.R**: I downloaded an excel file on Apple's income statement from 2005 - present time from https://advisortools.zacks.com/Research/Stocks/AAPL/Financials, and edited it on excel by flipping columns and rows. I then uploaded it as a .csv file into R, where I cleaned up the chart by removing the commas from the numbers in order to make the data numeric and removed any N/A lines. I then used the `plot()` and `ggplot()` functions to produced graphs on Apple's total revenue and gross profit.
+
+```{r appleplot}
+source("../R/appleincome.R")
+plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "b")
+plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "h")
+```

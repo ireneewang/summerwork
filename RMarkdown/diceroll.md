@@ -1,6 +1,10 @@
 Dice Roll
 ================
 
+\#Roll a Die
+
+## First
+
 **7/6/20:first.R**: My first script starts with 3 simple functions.
 First, I simulated the rolling of a pair of dice and the computation of
 their sum by writing a function dubbed `roll()`. This was executed using
@@ -19,7 +23,9 @@ roll <- function() {
 roll()
 ```
 
-    ## [1] 9
+    ## [1] 8
+
+\#\#Second
 
 **7/8/20:fairdie.R**: This script is an expansion on the dice simulation
 in first.R. I slightly rewrote `roll()` into `roll2()` in order to
@@ -68,6 +74,8 @@ fair.die
     ## 4     4       18       10
     ## 5     5       25       10
     ## 6     6       20       10
+
+\#\#Third
 
 **7/16/20:biaseddie.R**: This code is an expansion on fairdie.R, where I
 instead make a weighted die where the probability of rolling a six is
