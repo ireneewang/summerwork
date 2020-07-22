@@ -3,19 +3,19 @@ Playing Cards
 
 ## First
 
-**7/9/20:part2.R**: In part 2, I explore different R Objects in order to
-build a deck of cards. I learn to use matrices, arrays, and data frames
-which consist of vectors. In the code, I messed around with the `dim()`
-function which sets dimensions. Next, I fit `die` into a matrix. `byrow
-= TRUE` lets the matrix fill the data rather by column (which is
-defalt). Next, I made a three dimensional array with the dimensions
-2x2x3. I then started exploring ways to construct the deck of cards by
-looking at lists, which then later evolved into data frames. The list
-`card <- list("ace", "hearts", 1)` could be copied 52 times to produce a
-deck of cards; however, a data frame is much more clean and efficient.
-The last line is a saved file on my computer than produces a data frame
-of three different columns that sort 52 rows for the 52 cards in a deck.
-The throw columns are the face, suit, and value of each card
+**7/9/20:part2.R, deck1.R**: In part 2, I explore different R Objects in
+order to build a deck of cards. I learn to use matrices, arrays, and
+data frames which consist of vectors. In the code, I messed around with
+the `dim()` function which sets dimensions. Next, I fit `die` into a
+matrix. `byrow = TRUE` lets the matrix fill the data rather by column
+(which is defalt). Next, I made a three dimensional array with the
+dimensions 2x2x3. I then started exploring ways to construct the deck of
+cards by looking at lists, which then later evolved into data frames.
+The list `card <- list("ace", "hearts", 1)` could be copied 52 times to
+produce a deck of cards; however, a data frame is much more clean and
+efficient. The last line is a saved file on my computer than produces a
+data frame of three different columns that sort 52 rows for the 52 cards
+in a deck. The throw columns are the face, suit, and value of each card
 respectively.
 
 In deck1.R, I explore ways to “shuffle” the deck. The function `deal()`
@@ -47,3 +47,22 @@ cards that aren’t aces and `TRUE` for cards that are. Next, I used a
 Boolean operator to locate a specific card in the deck with the `&`
 symbol. This can lead to, once again, a modification of card values
 appropriate for the game that is being played.
+
+``` r
+source("../R/deck2.R")
+deck4$face == "queen" & deck4$suit == "spades"
+```
+
+    ##  [1] FALSE  TRUE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+    ## [13] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+    ## [25] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+    ## [37] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+    ## [49] FALSE FALSE FALSE FALSE
+
+``` r
+queenOfSpades <- deck4$face == "queen" & deck4$suit == "spades"
+```
+
+## Third
+
+**7/22/20:environment.R**:

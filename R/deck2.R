@@ -1,5 +1,4 @@
-setwd("../SummerWork/")
-deck <- read.csv("data/deck.csv", stringsAsFactors = FALSE)
+deck <- read.csv("../data/deck.csv", stringsAsFactors = FALSE)
 
 deal <- function(cards){
   cards[1, ]
