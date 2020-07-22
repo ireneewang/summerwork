@@ -1,10 +1,6 @@
 ---
 title: "R Functions"
-output: 
-  html_document:
-    keep_md: true
-    toc: true
-    theme: united
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
