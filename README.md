@@ -8,17 +8,17 @@ This is my project/any work that took place over the summer of 2020 as an intern
 ## **Table of Contents**
 
 #### ***Part 1: Dice Roll*** 
-[HTML](RMarkdown/diceroll.html), [Program](RMarkdown/diceroll.Rmd): 
+[HTML](RMarkdown/diceroll.md), [Program](RMarkdown/diceroll.Rmd): 
 This details my work on simulating the rolling of dice and an investigation on the fairness of a single die.
 
 #### ***Part 2: R Functions*** 
-[HTML](RMarkdown/rfunctions.html), [Program](RMarkdown/rfunctions.Rmd): 
+[HTML](RMarkdown/rfunctions.md), [Program](RMarkdown/rfunctions.Rmd): 
 I learned about functions in R and the manipulation of them through the use of the `uniroot()` function by implementing science functions from classes in school.
 
 #### ***Part 3: Apple Report*** 
-[HTML](RMarkdown/applereport.html), [Program](RMarkdown/applereport.Rmd): 
+[HTML](RMarkdown/applereport.md), [Program](RMarkdown/applereport.Rmd): 
 Through Excel files and plots on R, I produced copies of Apple's gross profit and annual income and the reasons behind the trends.
 
 #### ***Part 4: Playing Cards***
-[HTML](RMarkdown/playingcards.html), [Program](RMarkdown/playingcards.Rmd): 
+[HTML](RMarkdown/playingcards.md), [Program](RMarkdown/playingcards.Rmd): 
 I made a deck of cards on R and manipulated them in accordance to whichever game is being played, simulating the shuffling and dealing of cards.
