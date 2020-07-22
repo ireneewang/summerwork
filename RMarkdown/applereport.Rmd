@@ -1,7 +1,8 @@
 ---
 title: "Apple Report"
-output:
+output: 
   html_document:
+    keep_md: true
     toc: true
     theme: united
 ---
@@ -19,4 +20,3 @@ knitr::opts_chunk$set(echo = TRUE)
 source("../R/appleincome.R")
 plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "b")
 plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "h")
-```
