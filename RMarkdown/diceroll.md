@@ -21,7 +21,7 @@ roll <- function() {
 roll()
 ```
 
-    ## [1] 6
+    ## [1] 5
 
 ## Second
 

@@ -22,3 +22,7 @@ Through Excel files and plots on R, I produced copies of Apple's gross profit an
 #### ***Part 4: Playing Cards***
 [HTML](RMarkdown/playingcards.md), [Program](RMarkdown/playingcards.Rmd): 
 I made a deck of cards on R and manipulated them in accordance to whichever game is being played, simulating the shuffling and dealing of cards.
+
+#### ***Part 5: Slot Machine***
+[HTML](RMarkdown/slotmachine.md), [Program](RMarkdown/slotmachine.Rmd):
+
