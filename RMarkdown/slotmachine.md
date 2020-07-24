@@ -3,7 +3,7 @@ Slot Machine
 
 ## First
 
-[**7/23/20:slotmachine1.R**](R/slotmachine1.R): First, I wrote a
+[**7/23/20:slotmachine1.R**](../R/slotmachine1.R): First, I wrote a
 function to generate 3 symbols to simulate the rolling of a slot
 matchine: `get_symbols()`, which contains the list `wheel()`, by using
 the `sample()` function. The next segment is a frame for how the slot
@@ -24,6 +24,6 @@ play <- function() {
 play()
 ```
 
-    ## [1] "0" "0" "0"
+    ## [1] "B" "B" "B"
 
-    ## [1] 0
+    ## [1] 10
