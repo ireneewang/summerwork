@@ -25,4 +25,4 @@ I made a deck of cards on R and manipulated them in accordance to whichever game
 
 #### ***Part 5: Slot Machine***
 [HTML](RMarkdown/slotmachine.md), [Program](RMarkdown/slotmachine.Rmd):
-
+I made a slot machine that can operate and determine prize value.
