@@ -20,3 +20,25 @@ play <- function() {
 }
 play()
 ```
+
+## Second
+[**7/24/20:slotmachine2.R**](../R/slotmachine2.R): The purpose of this is to delve deeper into the slot machine script produced in slotmachine1.R. First, I worked with attributes by assigning one_play a vector. Attributes is meant to make the play function less redundant; I removed the `print()` function. I then wrote a new function to display slot results, `slot_display()`. The last line in the function, `cat(string)` will replace `\n` with a new line. Essentially, `slot_display()` will clean up the output, tidying it up.
+```{r slotmachine2}
+source("../R/slotmachine2.R")
+slot_display <- function(prize) {
+  symbols <- attr(one_play, "symbols")
+  symbols <- paste(symbols, collapse = " ")
+  prize <- one_play
+  string <- paste(symbols, prize, sep = "\n$")
+  cat(string)
+}
+slot_display(play())
+```
+I then worked with a new print method to modify `one_play` to do what `slot_display()` did.
+```{r slotmachine2 2}
+source("../R/slotmachine2.R")
+print.slots <- function(x, ...) {
+  slot_display(x)
+}
+one_play
+```
