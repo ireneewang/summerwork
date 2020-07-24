@@ -3,8 +3,8 @@ Apple Report
 
 ## First
 
-**7/10/20:appleincome.R**: I downloaded an excel file on Apple’s income
-statement from 2005 - present time from
+[**7/10/20:appleincome.R**](../R/appleincome.R): I downloaded an excel
+file on Apple’s income statement from 2005 - present time from
 <https://advisortools.zacks.com/Research/Stocks/AAPL/Financials>, and
 edited it on excel by flipping columns and rows. I then uploaded it as a
 .csv file into R, where I cleaned up the chart by removing the commas

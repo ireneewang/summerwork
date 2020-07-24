@@ -3,20 +3,20 @@ Playing Cards
 
 ## First
 
-**7/9/20:part2.R, deck1.R**: In part 2, I explore different R Objects in
-order to build a deck of cards. I learn to use matrices, arrays, and
-data frames which consist of vectors. In the code, I messed around with
-the `dim()` function which sets dimensions. Next, I fit `die` into a
-matrix. `byrow = TRUE` lets the matrix fill the data rather by column
-(which is defalt). Next, I made a three dimensional array with the
-dimensions 2x2x3. I then started exploring ways to construct the deck of
-cards by looking at lists, which then later evolved into data frames.
-The list `card <- list("ace", "hearts", 1)` could be copied 52 times to
-produce a deck of cards; however, a data frame is much more clean and
-efficient. The last line is a saved file on my computer than produces a
-data frame of three different columns that sort 52 rows for the 52 cards
-in a deck. The throw columns are the face, suit, and value of each card
-respectively.
+[\*\*7/9/20:part2.R](../R/part2.R), [**deck1.R**](../R/deck1.R): In part
+2, I explore different R Objects in order to build a deck of cards. I
+learn to use matrices, arrays, and data frames which consist of vectors.
+In the code, I messed around with the `dim()` function which sets
+dimensions. Next, I fit `die` into a matrix. `byrow = TRUE` lets the
+matrix fill the data rather by column (which is defalt). Next, I made a
+three dimensional array with the dimensions 2x2x3. I then started
+exploring ways to construct the deck of cards by looking at lists, which
+then later evolved into data frames. The list `card <- list("ace",
+"hearts", 1)` could be copied 52 times to produce a deck of cards;
+however, a data frame is much more clean and efficient. The last line is
+a saved file on my computer than produces a data frame of three
+different columns that sort 52 rows for the 52 cards in a deck. The
+throw columns are the face, suit, and value of each card respectively.
 
 In deck1.R, I explore ways to “shuffle” the deck. The function `deal()`
 produces the top card in the deck. To produce a new card with `deal()`,
@@ -36,16 +36,16 @@ Programming with R”.
 
 ## Second
 
-**7/14/20:deck2.R**: In an expansion on deck1.R, I modified the values
-of the deck depending on the game being played. For example, in a game
-of war, the ace values are actually greater than that of the King,
-making the value go from 1 to 14. Since aces appear every 13 in this
-deck, I can replace the vector with the appropriate value. Next, I
-demonstrated how the use of logical operators can be used to identify
-cards in a shuffled deck. The logical operator will produce `FALSE` for
-cards that aren’t aces and `TRUE` for cards that are. Next, I used a
-Boolean operator to locate a specific card in the deck with the `&`
-symbol. This can lead to, once again, a modification of card values
+[**7/14/20:deck2.R**](../R/deck2.R): In an expansion on deck1.R, I
+modified the values of the deck depending on the game being played. For
+example, in a game of war, the ace values are actually greater than that
+of the King, making the value go from 1 to 14. Since aces appear every
+13 in this deck, I can replace the vector with the appropriate value.
+Next, I demonstrated how the use of logical operators can be used to
+identify cards in a shuffled deck. The logical operator will produce
+`FALSE` for cards that aren’t aces and `TRUE` for cards that are. Next,
+I used a Boolean operator to locate a specific card in the deck with the
+`&` symbol. This can lead to, once again, a modification of card values
 appropriate for the game that is being played.
 
 ``` r
@@ -65,4 +65,7 @@ queenOfSpades <- deck4$face == "queen" & deck4$suit == "spades"
 
 ## Third
 
-**7/22/20:environment.R**:
+[**7/22/20:environment.R**](../R/environment.R): This explores the
+environment section of Grolemund’s book and how to implement it in code
+to produce a more realistic simulation. All commentary is located on the
+environment.R.
