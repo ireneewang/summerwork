@@ -15,16 +15,15 @@ cherries in a casino. The final part is dealing with the rolling of
 diamonds, which can double the prize.
 
 ``` r
+source("../R/slotmachinefinal.R")
 play <- function() {
   symbols <- get_symbols()
   print(symbols)
   score(symbols)
 }
-play
+play()
 ```
 
-    ## function() {
-    ##   symbols <- get_symbols()
-    ##   print(symbols)
-    ##   score(symbols)
-    ## }
+    ## [1] "0" "B" "0"
+
+    ## [1] 0

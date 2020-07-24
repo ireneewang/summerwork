@@ -110,6 +110,12 @@ prize * 2 ^ diamonds
 
 # Final code
 
+get_symbols <- function() {
+  wheel <- c("dd", "7", "BBB", "BB", "B", "c", "0")
+  sample(wheel, size = 3, replace = TRUE, 
+         prob = c(.03, .03, .06, .1, .25, .01, .52))
+}
+
 score <- function (symbols) {
   # identify case
   same <- symbols[1] == symbols[2] && symbols[2] == symbols[3]
