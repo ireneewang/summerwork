@@ -1,3 +1,5 @@
+# This script is purely to provide an easier source for my slotmachine.Rmd file.
+
 # Final code
 
 get_symbols <- function() {

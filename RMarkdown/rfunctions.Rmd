@@ -22,7 +22,7 @@ newton1(m = 5, a = 3)
 
 ## Second
 
-[**7/7/20:science.R](../R/science.R)**: This script is an expansion on the science equations in first.R. By utilizing the `uniroot()` function, my code can calculate any missing variable in the equation, given that the other parameters are inputed. This is done by giving `uniroot()` an interval to search for the answer. In order to ensure that all realistic values and answers can be produced, I set an extremely large interval: `c (-100000, 100000)`, or `c(0, 100000)` (for mass). I eliminated `delt` from the original function so that this function can solve for `t1` or `t0`.
+[**7/7/20:science.R**](../R/science.R): This script is an expansion on the science equations in first.R. By utilizing the `uniroot()` function, my code can calculate any missing variable in the equation, given that the other parameters are inputed. This is done by giving `uniroot()` an interval to search for the answer. In order to ensure that all realistic values and answers can be produced, I set an extremely large interval: `c (-100000, 100000)`, or `c(0, 100000)` (for mass). I eliminated `delt` from the original function so that this function can solve for `t1` or `t0`.
 ```{r science}
 source("../R/science.R")
 newton2 <- function(f, m, a) {

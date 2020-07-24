@@ -3,7 +3,7 @@ Playing Cards
 
 ## First
 
-[\*\*7/9/20:part2.R](../R/part2.R), [**deck1.R**](../R/deck1.R): In part
+[**7/9/20:part2.R**](../R/part2.R), [**deck1.R**](../R/deck1.R): In part
 2, I explore different R Objects in order to build a deck of cards. I
 learn to use matrices, arrays, and data frames which consist of vectors.
 In the code, I messed around with the `dim()` function which sets
