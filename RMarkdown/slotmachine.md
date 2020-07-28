@@ -24,7 +24,7 @@ play <- function() {
 play()
 ```
 
-    ## [1] "0"  "B"  "BB"
+    ## [1] "0" "0" "0"
 
     ## [1] 0
 
@@ -43,7 +43,7 @@ slot results, `slot_display()`. The last line in the function,
 source("../R/slotmachine2.R")
 ```
 
-    ## [1] "0" "B" "0"
+    ## [1] "BB" "0"  "0"
 
 ``` r
 slot_display <- function(prize) {
@@ -66,7 +66,7 @@ I then worked with a new print method to modify `one_play` to do what
 source("../R/slotmachine2.R")
 ```
 
-    ## [1] "dd" "0"  "0"
+    ## [1] "0" "B" "B"
 
 ``` r
 print.slots <- function(x, ...) {
@@ -77,3 +77,34 @@ one_play
 
     ## B 0 B
     ## $0
+
+## Third
+
+[**7/28/20:slotmachine3.R**](../R/slotmachine3.R): The purpose of this
+is to utilize the `score()` function I wrote before and apply it to
+realistic scenarios through statistics. I first used `expand.grid` to
+construct a data frame. I then added probabilites of Var 2, 3, and 3 as
+combos to columns. Using the application of statistics, I calculated the
+probability of every possible combination of the slot machine. Summing
+up these probabilities produces the expected 1. Then, through the use of
+loops, I can calculate the prize of every combination. Loops utilize
+`for()` to execute code. Then, finally, I calculated the expected value
+of the prize.
+
+``` r
+source("../R/slotmachine3.R")
+combos <- expand.grid(wheel, wheel, wheel, stringsAsFactors = FALSE)
+
+prob <- c("DD" = .03, "7" = .03, "BBB" = .06, "BB" = .1, "B" = .25, "C" = .01, "0" = .52)
+
+combos$prob1 <- prob[combos$Var1]
+combos$prob2 <- prob[combos$Var2]
+combos$prob3 <- prob[combos$Var3]
+
+head(combos, 3)
+```
+
+    ##   Var1 Var2 Var3 prob1 prob2 prob3
+    ## 1   DD   DD   DD  0.03  0.03  0.03
+    ## 2    7   DD   DD  0.03  0.03  0.03
+    ## 3  BBB   DD   DD  0.06  0.03  0.03

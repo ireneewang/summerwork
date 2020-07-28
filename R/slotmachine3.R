@@ -31,6 +31,7 @@ play <- function() {
   score(symbols)
 }
 #new work
+wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
 combos <- expand.grid(wheel, wheel, wheel, stringsAsFactors = FALSE)
 
 prob <- c("DD" = .03, "7" = .03, "BBB" = .06, "BB" = .1, "B" = .25, "C" = .01, "0" = .52)
