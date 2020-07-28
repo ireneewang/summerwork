@@ -22,6 +22,7 @@ play()
 ```
 
 ## Second
+
 [**7/24/20:slotmachine2.R**](../R/slotmachine2.R): The purpose of this is to delve deeper into the slot machine script produced in slotmachine1.R. First, I worked with attributes by assigning one_play a vector. Attributes is meant to make the play function less redundant; I removed the `print()` function. I then wrote a new function to display slot results, `slot_display()`. The last line in the function, `cat(string)` will replace `\n` with a new line. Essentially, `slot_display()` will clean up the output, tidying it up.
 ```{r slotmachine2}
 source("../R/slotmachine2.R")
@@ -42,3 +43,7 @@ print.slots <- function(x, ...) {
 }
 one_play
 ```
+
+## Third
+
+[**7/28/20:slotmachine3.R**](../R/slotmachine3.R): The purpose of this is to utilize the `score()` function I wrote before and apply it to realistic scenarios through statistics. I first used `expand.grid` to construct a data frame. I then added probabilites of Var 2, 3, and 3 as combos to columns. Using the application of statistics, I calculated the probability of every possible combination of the slot machine. Summing up these probabilities produces the expected 1. Then, through the use of loops, I can calculate the prize of every combination. Loops utilize `for()` to execute code. Then, finally, I calculated the expected value of the prize.

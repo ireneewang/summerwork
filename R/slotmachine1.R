@@ -1,5 +1,5 @@
 get_symbols <- function() {
-  wheel <- c("dd", "7", "BBB", "BB", "B", "c", "0")
+  wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
   sample(wheel, size = 3, replace = TRUE, 
          prob = c(.03, .03, .06, .1, .25, .01, .52))
 }
@@ -55,7 +55,7 @@ if(same) {
 # count diamonds
 # double the prize if necessary
 
-sum(symbols == "c")
+sum(symbols == "C")
 sum(symbols == "DD")
 
 if(same) {
@@ -64,7 +64,7 @@ if(same) {
 } else if (all(bars)) {
   prize <- 5
 } else {
-  cherries <- sum(symbols == "c")
+  cherries <- sum(symbols == "C")
   prize <- # calculate a prize
 }
 diamonds <- sum(symbols == "DD")
@@ -87,7 +87,7 @@ if(same) {
 } else if (all(bars)) {
   prize <- 5
 } else {
-  cherries <- sum(symbols == "c")
+  cherries <- sum(symbols == "C")
   prize <- c(0, 2, 5)[cherries + 1]
 }
 diamonds <- sum(symbols == "DD")
@@ -102,7 +102,7 @@ if(same) {
 } else if (all(bars)) {
   prize <- 5
 } else {
-  cherries <- sum(symbols == "c")
+  cherries <- sum(symbols == "C")
   prize <- c(0, 2, 5)[cherries + 1]
 }
 diamonds <- sum(symbols == "DD")
@@ -111,7 +111,7 @@ prize * 2 ^ diamonds
 # Final code
 
 get_symbols <- function() {
-  wheel <- c("dd", "7", "BBB", "BB", "B", "c", "0")
+  wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
   sample(wheel, size = 3, replace = TRUE, 
          prob = c(.03, .03, .06, .1, .25, .01, .52))
 }
@@ -128,7 +128,7 @@ score <- function (symbols) {
   } else if (all(bars)) {
     prize <- 5
   } else {
-    cherries <- sum(symbols == "c")
+    cherries <- sum(symbols == "C")
     prize <- c(0, 2, 5)[cherries + 1]
   }
   # account for diamonds

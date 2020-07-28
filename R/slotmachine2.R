@@ -1,6 +1,6 @@
 # previous work
 get_symbols <- function() {
-  wheel <- c("dd", "7", "BBB", "BB", "B", "c", "0")
+  wheel <- c("DD", "7", "BBB", "BB", "B", "C", "0")
   sample(wheel, size = 3, replace = TRUE, 
          prob = c(.03, .03, .06, .1, .25, .01, .52))
 }
@@ -17,7 +17,7 @@ if(same) {
 } else if (all(bars)) {
   prize <- 5
 } else {
-  cherries <- sum(symbols == "c")
+  cherries <- sum(symbols == "C")
   prize <- c(0, 2, 5)[cherries + 1]
 }
 
