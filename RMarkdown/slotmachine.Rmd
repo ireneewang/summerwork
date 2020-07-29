@@ -59,3 +59,7 @@ combos$prob3 <- prob[combos$Var3]
 
 head(combos, 3)
 ```
+
+## Fourth
+
+[**7/29/20:slotmachine4.R**](../R/slotmachine4.R): This final section of the book introduces how to write code quickly, which is then used to simulate 10 million slot machine plays. I incorporated vectorized code and quick loops to carry out this task. s

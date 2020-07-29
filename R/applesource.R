@@ -15,12 +15,4 @@ income3$Gross.Profit <- as.numeric(gsub(",", "", income3$Gross.Profit))
 
 plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "b")
 
-plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "h")
-
 plot(x=income3$Fiscal.period, y = income3$Gross.Profit, type = "b")
-
-plot(x=income3$Fiscal.period, y = income3$Gross.Profit, type = "h")
-
-library(ggplot2)
-
-ggplot(data = income2, mapping = aes(x = Fiscal.period, y = as.numeric(Total.Revenues))) + geom_point()

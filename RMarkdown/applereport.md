@@ -14,21 +14,10 @@ graphs on Apple’s total revenue and gross
 profit.
 
 ``` r
-source("../R/appleincome.R")
+source("../R/applesource.R")
 ```
 
-    ## Warning: package 'ggplot2' was built under R version 3.6.3
-
-![](applereport_files/figure-gfm/appleplot-1.png)<!-- -->![](applereport_files/figure-gfm/appleplot-2.png)<!-- -->![](applereport_files/figure-gfm/appleplot-3.png)<!-- -->![](applereport_files/figure-gfm/appleplot-4.png)<!-- -->
-
-``` r
-plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "b")
-```
-
-![](applereport_files/figure-gfm/appleplot-5.png)<!-- -->
-
-``` r
-plot(x=income2$Fiscal.period, y = income2$Total.Revenues, type = "h")
-```
-
-![](applereport_files/figure-gfm/appleplot-6.png)<!-- -->
+![](applereport_files/figure-gfm/appleplot-1.png)<!-- -->![](applereport_files/figure-gfm/appleplot-2.png)<!-- -->
+The first plot graphs Apple’s total revenue from 2005 to present, and
+the second plot graphs Apple’s gross profit from 2005 to present. In the
+graph of total revenue, Apple’s steady incline can be seen.

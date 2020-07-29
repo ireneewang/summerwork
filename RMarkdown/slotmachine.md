@@ -43,7 +43,7 @@ slot results, `slot_display()`. The last line in the function,
 source("../R/slotmachine2.R")
 ```
 
-    ## [1] "BB" "0"  "0"
+    ## [1] "BBB" "0"   "BB"
 
 ``` r
 slot_display <- function(prize) {
@@ -66,7 +66,7 @@ I then worked with a new print method to modify `one_play` to do what
 source("../R/slotmachine2.R")
 ```
 
-    ## [1] "0" "B" "B"
+    ## [1] "BBB" "B"   "BB"
 
 ``` r
 print.slots <- function(x, ...) {
@@ -76,7 +76,7 @@ one_play
 ```
 
     ## B 0 B
-    ## $0
+    ## $5
 
 ## Third
 
@@ -108,3 +108,10 @@ head(combos, 3)
     ## 1   DD   DD   DD  0.03  0.03  0.03
     ## 2    7   DD   DD  0.03  0.03  0.03
     ## 3  BBB   DD   DD  0.06  0.03  0.03
+
+## Fourth
+
+[**7/29/20:slotmachine4.R**](../R/slotmachine4.R): This final section of
+the book introduces how to write code quickly, which is then used to
+simulate 10 million slot machine plays. I incorporated vectorized code
+and quick loops to carry out this task. s
