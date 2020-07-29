@@ -19,5 +19,6 @@ source("../R/applesource.R")
 
 ![](applereport_files/figure-gfm/appleplot-1.png)<!-- -->![](applereport_files/figure-gfm/appleplot-2.png)<!-- -->
 The first plot graphs Apple’s total revenue from 2005 to present, and
-the second plot graphs Apple’s gross profit from 2005 to present. In the
-graph of total revenue, Apple’s steady incline can be seen.
+the second plot graphs Apple’s gross profit from 2005 to present. In
+both graphs, very similar trends pan out: there is a near exponential
+growth and the dips and rise of the two plots mirror each other.
