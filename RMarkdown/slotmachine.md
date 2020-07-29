@@ -24,7 +24,7 @@ play <- function() {
 play()
 ```
 
-    ## [1] "0" "0" "0"
+    ## [1] "0" "B" "0"
 
     ## [1] 0
 
@@ -43,7 +43,7 @@ slot results, `slot_display()`. The last line in the function,
 source("../R/slotmachine2.R")
 ```
 
-    ## [1] "BBB" "0"   "BB"
+    ## [1] "0" "7" "0"
 
 ``` r
 slot_display <- function(prize) {
@@ -66,7 +66,7 @@ I then worked with a new print method to modify `one_play` to do what
 source("../R/slotmachine2.R")
 ```
 
-    ## [1] "BBB" "B"   "BB"
+    ## [1] "0" "0" "0"
 
 ``` r
 print.slots <- function(x, ...) {
@@ -76,7 +76,7 @@ one_play
 ```
 
     ## B 0 B
-    ## $5
+    ## $0
 
 ## Third
 
@@ -114,4 +114,27 @@ head(combos, 3)
 [**7/29/20:slotmachine4.R**](../R/slotmachine4.R): This final section of
 the book introduces how to write code quickly, which is then used to
 simulate 10 million slot machine plays. I incorporated vectorized code
-and quick loops to carry out this task. s
+and quick loops to carry out this task. The first code demonstrates how
+vectorized code is much more efficient. Then, I vectorized the code that
+is given in the book. The next part is working with loops. In short, the
+code that was produced in earlier sections of slotmachine were
+vectorized in order to produce loops.
+
+``` r
+source("../R/slotmachine4source.R")
+#not vectorized
+abs_loop <- function(vec){
+  for(i in 1:length(vec)){
+    if(vec[i] <0) {
+      vec[i] <- -vec[i]
+    }
+  }
+  vec
+}
+#vs vectorized
+abs_set <- function(vec){
+  negs <- vec < 0
+  vec[negs] <- vec[negs] * -1
+  vec
+}
+```
