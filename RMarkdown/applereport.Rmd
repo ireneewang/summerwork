@@ -37,7 +37,7 @@ ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, colo
   geom_smooth(method = "lm", aes(fill = Total.Revenues))
 ```
 
-The second plot graphs the linear regression line on the data. From a larger scope, it becomes apparent that the data is relatively linear and that the regression line represents the data well. This indicates that the correlation coefficient is most likely positive and close to 1. The coefficient of determination also most likely is close to one, as a high percentage of data can be accounted for by the line of regression: looking at the shaded region, only a few points do not fall within the area.
+The second plot graphs the linear regression line on the data. From a larger scope, it becomes apparent that the data is relatively linear and that the regression line represents the data well. This indicates that the correlation coefficient is most likely positive and close to 1. The coefficient of determination also most likely is close to one, as a high percentage of data can be accounted for by the line of regression: looking at the shaded region, only a few points do not fall within the area (this is the 95% confidence interval).
 
 ```{r applegraphs3}
 source("../R/applegraphs.R")

@@ -60,7 +60,7 @@ the correlation coefficient is most likely positive and close to 1. The
 coefficient of determination also most likely is close to one, as a high
 percentage of data can be accounted for by the line of regression:
 looking at the shaded region, only a few points do not fall within the
-area.
+area (this is the 95% confidence interval).
 
 ``` r
 source("../R/applegraphs.R")
