@@ -27,4 +27,4 @@ I made a deck of cards on R and manipulated them in accordance to whichever game
 
 #### ***Part 5: Slot Machine***
 [HTML](RMarkdown/slotmachine.md), [Program](RMarkdown/slotmachine.Rmd):
-I made a slot machine that can operate and determine prize value. I learned if, else, and else if functions, how to creatively implement simple functions for a more complicated task, attributes, and loops.
+I made a slot machine that can operate and determine prize value. I learned if, else, and else if functions, how to creatively implement simple functions for a more complicated task, attributes, vectorized code, and loops.

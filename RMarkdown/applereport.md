@@ -10,8 +10,7 @@ edited it on excel by flipping columns and rows. I then uploaded it as a
 .csv file into R, where I cleaned up the chart by removing the commas
 from the numbers in order to make the data numeric and removed any N/A
 lines. I then used the `plot()` and `ggplot()` functions to produced
-graphs on Apple’s total revenue and gross
-profit.
+graphs on Apple’s total revenue and gross profit.
 
 ``` r
 source("../R/applesource.R")
@@ -19,6 +18,70 @@ source("../R/applesource.R")
 
 ![](applereport_files/figure-gfm/appleplot-1.png)<!-- -->![](applereport_files/figure-gfm/appleplot-2.png)<!-- -->
 
+The first plot graphs Apple’s total revenue from 2005 to present, and
+the second plot graphs Apple’s gross profit from 2005 to present. In
+both graphs, very similar trends pan out: there is a near exponential
+growth and the dips and rise of the two plots mirror each other.
+
+## Second
+
+[**7/30/20:applegraphs.R**](../R/applegraphs.R): I cleaned up the graphs
+by making more aesthetically pleasing plots, as well as producing plots
+with linear regression lines.
+
 ``` r
-#The first plot graphs Apple's total revenue from 2005 to present, and the second plot graphs Apple's gross profit from 2005 to present. In both graphs, very similar trends pan out: there is a near exponential growth and the dips and rise of the two plots mirror each other.
+source("../R/applegraphs.R")
+ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = factor(Total.Revenues))) +
+  geom_point(size = 3)
 ```
+
+![](applereport_files/figure-gfm/applegraphs-1.png)<!-- -->
+
+This first plot simply graphs total revenues against fiscal period. From
+a closer scope, the data seems to grow exponentially up until 2012,
+where it oscillates around a linear line.
+
+``` r
+source("../R/applegraphs.R")
+ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = Total.Revenues)) +
+  scale_shape_identity() +
+  geom_point(size = 3) + 
+  geom_smooth(method = "lm", aes(fill = Total.Revenues))
+```
+
+    ## `geom_smooth()` using formula 'y ~ x'
+
+![](applereport_files/figure-gfm/applegraphs2-1.png)<!-- -->
+
+The second plot graphs the linear regression line on the data. From a
+larger scope, it becomes apparent that the data is relatively linear and
+that the regression line represents the data well. This indicates that
+the correlation coefficient is most likely positive and close to 1. The
+coefficient of determination also most likely is close to one, as a high
+percentage of data can be accounted for by the line of regression:
+looking at the shaded region, only a few points do not fall within the
+area.
+
+``` r
+source("../R/applegraphs.R")
+ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = factor(Gross.Profit))) +
+  geom_point(size = 3)
+```
+
+![](applereport_files/figure-gfm/applegraphs3-1.png)<!-- -->
+
+``` r
+ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = Gross.Profit)) +
+  scale_shape_identity() +
+  geom_point(size = 3) + 
+  geom_smooth(method = "lm", aes(fill = Gross.Profit))
+```
+
+    ## `geom_smooth()` using formula 'y ~ x'
+
+![](applereport_files/figure-gfm/applegraphs3-2.png)<!-- -->
+
+I then did the same with gross profit. Trends are very similar, so the
+same commentary that I made for total revenues similarly applies to
+gross profit. This isn’t surprising, as gross profit and total revenues
+undoubtedly rise and fall together as they are very similar in theory.
