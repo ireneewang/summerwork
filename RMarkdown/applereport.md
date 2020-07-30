@@ -81,7 +81,7 @@ ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color 
 
 ![](applereport_files/figure-gfm/applegraphs3-2.png)<!-- -->
 
-I then did the same with gross profit. Trends are very similar, so the
-same commentary that I made for total revenues similarly applies to
+I then did the same with gross profit. The trends are very similar, so
+the same commentary that I made for total revenues similarly applies to
 gross profit. This isn’t surprising, as gross profit and total revenues
 undoubtedly rise and fall together as they are very similar in theory.
