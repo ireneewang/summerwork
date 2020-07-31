@@ -85,3 +85,44 @@ I then did the same with gross profit. The trends are very similar, so
 the same commentary that I made for total revenues similarly applies to
 gross profit. This isn’t surprising, as gross profit and total revenues
 undoubtedly rise and fall together as they are very similar in theory.
+
+## Third
+
+[**7/31/20:applegraphs2.R**](../R/applegraphs2.R): I transformed the
+scatter plots of total revenues and gross profit with log transform
+(log10).
+
+``` r
+source("../R/applegraphs2.R")
+p + scale_x_log10() + scale_y_log10()
+```
+
+![](applereport_files/figure-gfm/applegraphs5-1.png)<!-- -->
+
+``` r
+q + scale_x_log10() + scale_y_log10()
+```
+
+![](applereport_files/figure-gfm/applegraphs5-2.png)<!-- -->
+
+I then converted the scatter plots into bar plots, making it
+aesthetically pleasing with the colors and outline.
+
+``` r
+source("../R/applegraphs2.R")
+ggplot(income2, aes(x = Fiscal.period, y = Total.Revenues)) +
+  geom_bar(stat = "identity", color = "blue", fill = rgb(0.2,0.6,0.8,0.7))
+```
+
+![](applereport_files/figure-gfm/applegraphs4-1.png)<!-- -->
+
+``` r
+ggplot(income3, aes(x = Fiscal.period, y = Gross.Profit)) +
+  geom_bar(stat = "identity", color = "purple", fill = rgb(.6, .6, 1, .7))
+```
+
+![](applereport_files/figure-gfm/applegraphs4-2.png)<!-- -->
+
+This first bar plot graphs total revenues against fiscal period, and the
+second graphs gross profit. The trend is, obviously, the same as with
+the scatter plots.
