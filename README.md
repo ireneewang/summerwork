@@ -4,7 +4,7 @@
 ### Irene Wang
 
 This is my project/any work that took place over the summer of 2020 as an intern, and I'm utilizing GitHub as a way to track and demonstrate by progress. Everything is virtually self taught.
-Starting date: 7/1/20
+Starting date: 6/28/20
 Ending date: TBD
 
 ## **Table of Contents**
@@ -28,3 +28,6 @@ I made a deck of cards on R and manipulated them in accordance to whichever game
 #### ***Part 5: Slot Machine***
 [HTML](RMarkdown/slotmachine.md), [Program](RMarkdown/slotmachine.Rmd):
 I made a slot machine that can operate and determine prize value. I learned if, else, and else if functions, how to creatively implement simple functions for a more complicated task, attributes, vectorized code, and loops.
+
+#### ***Part 6: Premed***
+TBD
