@@ -33,4 +33,4 @@ I made a slot machine that can operate and determine prize value. I learned if, 
 
 #### ***Part 6: Apple Statistics***
 [HTML](RMarkdown/applestatistics.md), [Program](RMarkdown/applestatistics.Rmd):
-
+I learned how to use ggplot to graph aeshetically pleasing plots of the Apple data and analyzed the trends using my knowledge of statistics.
