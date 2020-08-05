@@ -10,7 +10,8 @@ with linear regression lines.
 ``` r
 source("../R/applegraphs.R")
 ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = factor(Total.Revenues))) +
-  geom_point(size = 3)
+  geom_point(size = 3) + 
+  labs(title = "Apple Total Revenues Scatter Plot", x = "Year", y = "Total Revenues (dollars)", color = "Total Revenues")
 ```
 
 ![](applestatistics_files/figure-gfm/applegraphs-1.png)<!-- -->
@@ -24,7 +25,8 @@ source("../R/applegraphs.R")
 ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = Total.Revenues)) +
   scale_shape_identity() +
   geom_point(size = 3) + 
-  geom_smooth(method = "lm", aes(fill = Total.Revenues))
+  geom_smooth(method = "lm", aes(fill = Total.Revenues)) +
+  labs(title = "Apple Total Revenues Linear Regression", x = "Year", y = "Total Revenues (dollars)", color = "Total Revenues")
 ```
 
     ## `geom_smooth()` using formula 'y ~ x'
@@ -43,7 +45,8 @@ area (this is the 95% confidence interval).
 ``` r
 source("../R/applegraphs.R")
 ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = factor(Gross.Profit))) +
-  geom_point(size = 3)
+  geom_point(size = 3) +
+  labs(title = "Apple Gross Profit Scatter Plot", x = "Year", y = "Gross Profit (dollars)", color = "Gross Profit")
 ```
 
 ![](applestatistics_files/figure-gfm/applegraphs3-1.png)<!-- -->
@@ -52,7 +55,8 @@ ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color 
 ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = Gross.Profit)) +
   scale_shape_identity() +
   geom_point(size = 3) + 
-  geom_smooth(method = "lm", aes(fill = Gross.Profit))
+  geom_smooth(method = "lm", aes(fill = Gross.Profit)) +
+  labs(title = "Apple Gross Profit Linear Regression", x = "Year", y = "Gross Profit (dollars)", color = "Gross Profit")
 ```
 
     ## `geom_smooth()` using formula 'y ~ x'
@@ -68,7 +72,10 @@ undoubtedly rise and fall together as they are very similar in theory.
 
 [**7/31/20:applegraphs2.R**](../R/applegraphs2.R): I transformed the
 scatter plots of total revenues and gross profit with log transform
-(log10).
+(log10). Log transformations are useful in dealing with skewed data,
+making them appeared less skewed for further observation. The log plot
+does look relatively linear, though there is a noticeable change in year
+2012.
 
 ``` r
 source("../R/applegraphs2.R")
@@ -89,14 +96,16 @@ aesthetically pleasing with the colors and outline.
 ``` r
 source("../R/applegraphs2.R")
 ggplot(income2, aes(x = Fiscal.period, y = Total.Revenues)) +
-  geom_bar(stat = "identity", color = "blue", fill = rgb(0.2,0.6,0.8,0.7))
+  geom_bar(stat = "identity", color = "blue", fill = rgb(0.2,0.6,0.8,0.7)) +
+  labs(title = "Apple Total Revenues Bar Plot", x = "Year", y = "Total Revenues (dollars)")
 ```
 
 ![](applestatistics_files/figure-gfm/applegraphs4-1.png)<!-- -->
 
 ``` r
 ggplot(income3, aes(x = Fiscal.period, y = Gross.Profit)) +
-  geom_bar(stat = "identity", color = "purple", fill = rgb(.6, .6, 1, .7))
+  geom_bar(stat = "identity", color = "purple", fill = rgb(.6, .6, 1, .7)) +
+  labs(title = "Apple Gross Profit Bar Plot", x = "Year", y = "Gross Profit (dollars)")
 ```
 
 ![](applestatistics_files/figure-gfm/applegraphs4-2.png)<!-- -->
