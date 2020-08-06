@@ -7,7 +7,6 @@ income2$Total.Revenues <- as.numeric(gsub(",", "", income2$Total.Revenues))
 
 library(ggplot2)
 
-
 ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = factor(Total.Revenues))) +
   geom_point(size = 3) + 
   labs(title = "Apple Total Revenues Scatter Plot", x = "Year", y = "Total Revenues (dollars)", color = "Total Revenues")

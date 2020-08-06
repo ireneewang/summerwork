@@ -50,7 +50,7 @@ I then did the same with gross profit. The trends are very similar, so the same 
 
 [**7/31/20:applegraphs2.R**](../R/applegraphs2.R): I transformed the scatter plots of total revenues and gross profit with log transform (log10). Log transformations are useful in dealing with skewed data, making them appeared less skewed for further observation. The log plot does look relatively linear, though there is a noticeable change in year 2012.
 
-```{r applegraphs5}
+```{r applegraphs4}
 source("../R/applegraphs2.R")
 p + scale_x_log10() + scale_y_log10()
 
@@ -59,7 +59,7 @@ q + scale_x_log10() + scale_y_log10()
 
 I then converted the scatter plots into bar plots, making it aesthetically pleasing with the colors and outline.
 
-```{r applegraphs4}
+```{r applegraphs5}
 source("../R/applegraphs2.R")
 ggplot(income2, aes(x = Fiscal.period, y = Total.Revenues)) +
   geom_bar(stat = "identity", color = "blue", fill = rgb(0.2,0.6,0.8,0.7)) +
@@ -71,3 +71,24 @@ ggplot(income3, aes(x = Fiscal.period, y = Gross.Profit)) +
 ```
 
 This first bar plot graphs total revenues against fiscal period, and the second graphs gross profit. The trend is, obviously, the same as with the scatter plots.
+
+## Third
+
+[**8/5/20:applegraphs3.R**](../R/applegraphs3.R): I produced two different regression lines by splitting up the data between data before 2012 and data after 2012. I did this for both total revenues and gross profit.
+
+```{r applegraphs6}
+source("../R/applegraphs3.R")
+ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = Fiscal.period > 2012)) +
+  scale_shape_identity() +
+  geom_point(size = 3) + 
+  geom_smooth(method = "lm", aes(fill = Total.Revenues)) +
+  labs(title = "Apple Total Revenues Linear Regression Split", x = "Year", y = "Total Revenues (dollars)", color = "Total Revenues by Time")
+
+ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = Fiscal.period > 2012)) +
+  scale_shape_identity() +
+  geom_point(size = 3) + 
+  geom_smooth(method = "lm", aes(fill = Gross.Profit)) +
+  labs(title = "Apple Gross Profit Linear Regression Split", x = "Year", y = "Gross Profit (dollars)", color = "Gross Profit by Time")
+```
+
+The observed trends apply for both total revenues and gross profit as they are very similar to each other. Though the data before 2012 appears to grow exponentially in comparison to the data after, the rate of growth seems to be about the same. Looking at the slope closely, the growth is steeper for data before 2012; however, this difference is very minimal.
