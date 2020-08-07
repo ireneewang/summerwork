@@ -1,0 +1,16 @@
+---
+title: "Apple Presentation"
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## First
+
+[**8/6/20:**](../R/appepresentation.R): I used the officer package in R to produce a ppt. Functions like `add_slide()` and `ph_with()` assisted in creating slides and adding content.
+```{r applepresentation}
+source("../R/applepresentation.R")
+print(apple_pres, target = "../apple_pres.pptx")
+```
