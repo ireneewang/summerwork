@@ -13,3 +13,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r datacollection1}
 source("../R/datacollection1.R")
 ```
+
+Both companies experienced near exponential growth.

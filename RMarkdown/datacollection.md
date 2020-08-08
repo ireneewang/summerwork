@@ -37,9 +37,9 @@ source("../R/datacollection1.R")
     ##    tickers =AAPL, FB, WMT
     ##    Downloading data for benchmark ticker
     ## ^GSPC | yahoo (1|1) | Not Cached | Saving cache
-    ## AAPL | yahoo (1|3) | Not Cached | Saving cache - Got 100% of valid prices | Good job!
+    ## AAPL | yahoo (1|3) | Not Cached | Saving cache - Got 100% of valid prices | Got it!
     ## FB | yahoo (2|3) | Not Cached | Saving cache - Got 55% of valid prices | OUT: not enough data (thresh.bad.data = 75%)
-    ## WMT | yahoo (3|3) | Not Cached | Saving cache - Got 100% of valid prices | Good stuff!
+    ## WMT | yahoo (3|3) | Not Cached | Saving cache - Got 100% of valid prices | OK!
 
     ## # A tibble: 3 x 6
     ##   ticker src   download.status total.obs perc.benchmark.dates threshold.decision
@@ -49,3 +49,5 @@ source("../R/datacollection1.R")
     ## 3 WMT    yahoo OK                   3773                1     KEEP
 
 ![](datacollection_files/figure-gfm/datacollection1-1.png)<!-- -->
+
+Both companies experienced near exponential growth.
