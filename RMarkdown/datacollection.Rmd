@@ -1,0 +1,15 @@
+---
+title: "Data Collection"
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## First
+
+[**8/7/20:datacollection1.R**](../R/datacollection1.R): I used the BatchGetSymbols package to collect data from Apple, Facebook, and Walmart from the past 15 years. I did this by setting a starting date, end date, and tickers that told the package to collect the data from the yahoo database.
+```{r datacollection1}
+source("../R/datacollection1.R")
+```

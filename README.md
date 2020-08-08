@@ -38,3 +38,7 @@ I learned how to use ggplot to graph aeshetically pleasing plots of the Apple da
 #### ***Part 7: Apple Presentation***
 [HTML](RMarkdown/applepresentation.md), [Program](RMarkdown/applepresentation.Rmd):
 I learned how to use the officer package in order to produce powerpoint presentations in R.
+
+#### ***Part 8: Data Collection***
+[HTML](RMarkdown/datacollection.md), [Program](RMarkdown/datacollection.Rmd):
+I learned how to use the BatchGetSymbols package and ggplot facet to download and analyze data in R.
