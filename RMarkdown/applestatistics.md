@@ -123,7 +123,7 @@ profit.
 
 ``` r
 source("../R/applegraphs3.R")
-ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = Fiscal.period > 2012)) +
+ggplot(data = income2, mapping = aes(x = Fiscal.period, y = log10_Total.Revenues, color = Fiscal.period > 2012)) +
   scale_shape_identity() +
   geom_point(size = 3) + 
   geom_smooth(method = "lm", aes(fill = Total.Revenues)) +
@@ -135,7 +135,7 @@ ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, colo
 ![](applestatistics_files/figure-gfm/applegraphs6-1.png)<!-- -->
 
 ``` r
-ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = Fiscal.period > 2012)) +
+ggplot(data = income3, mapping = aes(x = Fiscal.period, y = log10_Gross.Profit, color = Fiscal.period > 2012)) +
   scale_shape_identity() +
   geom_point(size = 3) + 
   geom_smooth(method = "lm", aes(fill = Gross.Profit)) +

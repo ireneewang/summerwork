@@ -78,13 +78,14 @@ This first bar plot graphs total revenues against fiscal period, and the second 
 
 ```{r applegraphs6}
 source("../R/applegraphs3.R")
-ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues, color = Fiscal.period > 2012)) +
+ggplot(data = income2, mapping = aes(x = Fiscal.period, y = log10_Total.Revenues, color = Fiscal.period > 2012)) +
   scale_shape_identity() +
   geom_point(size = 3) + 
   geom_smooth(method = "lm", aes(fill = Total.Revenues)) +
   labs(title = "Apple Total Revenues Linear Regression Split", x = "Year", y = "Total Revenues (dollars)", color = "Total Revenues by Time")
 
-ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = Fiscal.period > 2012)) +
+
+ggplot(data = income3, mapping = aes(x = Fiscal.period, y = log10_Gross.Profit, color = Fiscal.period > 2012)) +
   scale_shape_identity() +
   geom_point(size = 3) + 
   geom_smooth(method = "lm", aes(fill = Gross.Profit)) +
