@@ -79,13 +79,13 @@ does look relatively linear, though there is a noticeable change in year
 
 ``` r
 source("../R/applegraphs2.R")
-p + scale_x_log10() + scale_y_log10()
+p + scale_y_log10()
 ```
 
 ![](applestatistics_files/figure-gfm/applegraphs4-1.png)<!-- -->
 
 ``` r
-q + scale_x_log10() + scale_y_log10()
+q + scale_y_log10()
 ```
 
 ![](applestatistics_files/figure-gfm/applegraphs4-2.png)<!-- -->

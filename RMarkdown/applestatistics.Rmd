@@ -52,9 +52,9 @@ I then did the same with gross profit. The trends are very similar, so the same 
 
 ```{r applegraphs4}
 source("../R/applegraphs2.R")
-p + scale_x_log10() + scale_y_log10()
+p + scale_y_log10()
 
-q + scale_x_log10() + scale_y_log10()
+q + scale_y_log10()
 ```
 
 I then converted the scatter plots into bar plots, making it aesthetically pleasing with the colors and outline.

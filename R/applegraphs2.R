@@ -14,13 +14,13 @@ p <- ggplot(data = income2, mapping = aes(x = Fiscal.period, y = Total.Revenues,
   geom_point(size = 3) + 
   labs(title = "Apple Total Revenues Log Transform", x = "Year", y = "Total Revenues (dollars)", color = "Total Revenues")
 
-p + scale_x_log10() + scale_y_log10()
+p + scale_y_log10()
 
 q <- ggplot(data = income3, mapping = aes(x = Fiscal.period, y = Gross.Profit, color = factor(Gross.Profit))) +
   geom_point(size = 3) +
   labs(title = "Apple Gross Profit Log Transform", x = "Year", y = "Gross Profit (dollars)", color = "Gross Profit")
 
-q + scale_x_log10() + scale_y_log10()
+q + scale_y_log10()
 
 
 ggplot(income2, aes(x = Fiscal.period, y = Total.Revenues)) +
