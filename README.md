@@ -7,7 +7,7 @@ This is my project/any work that took place over the summer of 2020 as an intern
 
 Starting date: 6/28/20
 
-Ending date: TBD
+Ending date: 8/20/20
 
 ## **Table of Contents**
 
@@ -42,3 +42,7 @@ I learned how to use the officer package in order to produce powerpoint presenta
 #### ***Part 8: Data Collection***
 [HTML](RMarkdown/datacollection.md), [Program](RMarkdown/datacollection.Rmd):
 I learned how to use the BatchGetSymbols package and ggplot facet to download and analyze data in R.
+
+#### ***Part 9: Final Presentation***
+[R Google Slides Presentation](https://docs.google.com/presentation/d/19QzHweKEYZcfiyyd6kMPryq96DQQy1iu_Si0NWtOQ_k/edit?usp=sharing):
+I gave a final presentation on my internship, compiling everything into a Google slideshow. Everything in this repository is condensed and reflected in it.
