@@ -47,4 +47,5 @@ I learned how to use the BatchGetSymbols package and ggplot facet to download an
 [R Google Slides Presentation](https://docs.google.com/presentation/d/19QzHweKEYZcfiyyd6kMPryq96DQQy1iu_Si0NWtOQ_k/edit?usp=sharing):
 I gave a final presentation on my internship, compiling everything into a Google slideshow. Everything in this repository is condensed and reflected in it. This is supposed to act as a tutorial for those who have never used R before.
 
-#### ***Part 10: Publication***
+#### ***Part 10: Research Paper***
+
