@@ -48,7 +48,7 @@ I learned how to use the BatchGetSymbols package and ggplot facet to download an
 I gave a final presentation on my internship, compiling everything into a Google slideshow. Everything in this repository is condensed and reflected in it. This is supposed to act as a tutorial for those who have never used R before.
 
 #### ***Part 10: Research Paper***
-[HTML](RMarkdown/researchpaper.md), [Program](RMarkdown/datacollection.Rmd):
+[HTML](RMarkdown/researchpaper.md), [Program](RMarkdown/researchpaper.Rmd):
 I applied my internship experience to a research opportunity involving prostate cancer research by retrieving, analyzing, and plotting public data.
 The final paper can be found at [European Urology Open Science](https://www.sciencedirect.com/journal/european-urology-open-science).
 
