@@ -1,4 +1,7 @@
-install.packages("GEOquery")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("GEOquery")
 
 # get GEO data first using GEOquery library
 # GEO (gene expression Omnibus) is a database repository of high throughput gene expression data

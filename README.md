@@ -50,5 +50,5 @@ I gave a final presentation on my internship, compiling everything into a Google
 #### ***Part 10: Research Paper***
 [HTML](RMarkdown/researchpaper.md), [Program](RMarkdown/researchpaper.Rmd):
 I applied my internship experience to a research opportunity involving prostate cancer research by retrieving, analyzing, and plotting public data.
-The final paper can be found at [European Urology Open Science](https://www.sciencedirect.com/journal/european-urology-open-science).
+The final paper can be found at [European Urology Open Science](https://www.sciencedirect.com/journal/european-urology-open-science); the direct link can be found [here](https://www.eu-openscience.europeanurology.com/article/S2666-1683(20)35833-X/fulltext).
 
